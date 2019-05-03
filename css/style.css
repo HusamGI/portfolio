@@ -849,3 +849,26 @@ Keyframes
     opacity: 1;
   }
 }
+
+/* -------------------------------- 
+
+PhotoSwipe Styles
+
+-------------------------------- */
+.project-images a {
+  border-right: 5px;
+}
+.project-images img {
+  width: 100%;
+  height: auto;
+  border-right: 5px;
+}
+.project-images figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+}
+.project-images figcaption {
+  display: none;
+}
