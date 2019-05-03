@@ -2,7 +2,8 @@ jQuery(document).ready(function(){
 	var intro = $('.cd-intro-block'),
 		projectsContainer = $('.cd-projects-wrapper'),
 		projectsSlider = projectsContainer.children('.cd-slider'),
-		singleProjectContent = $('.cd-project-content'),
+		singleProjectContentContainer = $('.cd-project-content'),
+		singleProjectContent = $('.cd-project-content li'),
 		sliderNav = $('.cd-slider-navigation');
 
 	var resizing = false;
@@ -38,14 +39,15 @@ jQuery(document).ready(function(){
 
 	//select a single project - open project-content panel
 	projectsContainer.on('click', '.cd-slider a', function(event) {
-		var mq = checkMQ();
+		var mq = checkMQ(),
+			project = $(this).attr('data-project');
 		event.preventDefault();
 		if( $(this).parent('li').next('li').is('.current') && (mq == 'desktop') ) {
 			prevSides(projectsSlider);
 		} else if ( $(this).parent('li').prev('li').prev('li').prev('li').is('.current')  && (mq == 'desktop') ) {
 			nextSides(projectsSlider);
 		} else {
-			singleProjectContent.addClass('is-visible');
+			singleProjectContentContainer.find("li[data-project='" + project + "']").addClass('is-visible');
 		}
 	});
 

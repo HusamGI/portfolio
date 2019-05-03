@@ -706,7 +706,7 @@ Project slider navigation
 Project content panel 
 
 -------------------------------- */
-.cd-project-content {
+.cd-project-content li {
   position: fixed;
   z-index: 3;
   top: 0;
@@ -735,17 +735,17 @@ Project content panel
   -moz-transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
   transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
 }
-.cd-project-content > div {
+.cd-project-content > li > div {
   height: 100%;
   overflow-y: auto;
   padding: 4em 2em;
 }
-.cd-project-content > div > * {
+.cd-project-content > li > div > * {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-.cd-project-content.is-visible {
+.cd-project-content li.is-visible {
   visibility: visible;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -759,29 +759,29 @@ Project content panel
   -moz-transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
   transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
 }
-.cd-project-content.is-visible > div {
+.cd-project-content li.is-visible > div {
   /* smooth scrolling on iOS */
   -webkit-overflow-scrolling: touch;
 }
-.cd-project-content h2 {
+.cd-project-content li h2 {
   font-size: 2.4rem;
   font-weight: bold;
 }
-.cd-project-content em {
+.cd-project-content li em {
   display: block;
   font-size: 1.8rem;
   font-style: italic;
   margin: 1em auto;
 }
-.cd-project-content p {
+.cd-project-content li p {
   margin-bottom: 1em;
   font-size: 1.4rem;
   color: #6f757c;
 }
-.cd-project-content em, .cd-project-content p {
+.cd-project-content li em, .cd-project-content li p {
   line-height: 1.6;
 }
-.cd-project-content .close {
+.cd-project-content li .close {
   display: block;
   height: 32px;
   width: 32px;
@@ -791,16 +791,16 @@ Project content panel
   background: url(../img/cd-close-dark.svg) no-repeat center center;
 }
 @media only screen and (min-width: 900px) {
-  .cd-project-content h2 {
+  .cd-project-content li h2 {
     font-size: 6rem;
   }
-  .cd-project-content em {
+  .cd-project-content li em {
     font-size: 2.4rem;
   }
-  .cd-project-content p {
+  .cd-project-content li p {
     font-size: 1.8rem;
   }
-  .cd-project-content .close {
+  .cd-project-content li .close {
     top: 30px;
     right: 5%;
   }
