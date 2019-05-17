@@ -872,3 +872,21 @@ PhotoSwipe Styles
 .project-images figcaption {
   display: none;
 }
+
+/* -------------------------------- 
+
+Custom Styles
+
+-------------------------------- */
+.inner-project-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.inner-project-info em {
+  margin: 15px;
+}
+.inner-project-date{
+  color: #999;
+}
