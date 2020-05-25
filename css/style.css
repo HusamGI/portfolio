@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #eebb00;
+  color: #D95B43;
   text-decoration: none;
 }
 
@@ -777,6 +777,10 @@ Project content panel
   margin-bottom: 1em;
   font-size: 1.4rem;
   color: #6f757c;
+}
+.cd-project-content li p.through {
+	font-style: italic;
+	margin-bottom: 0;
 }
 .cd-project-content li em, .cd-project-content li p {
   line-height: 1.6;
